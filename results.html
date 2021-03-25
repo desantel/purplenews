@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Results Page</title>
+    <link rel="stylsheet" href="styleNews.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Purple News
+        </h1>
+        <nav>
+            <p class="nav">Home</p>
+        </nav>
+    </header>
+    <aside>
+        <div class=“”>
+            <form action=“/form/submit” method=“GET”>
+                <input type=“text” name=“text” class=“search” placeholder=“Search here...“>
+                <input type=“radio” name=“radio” class=“radio” placeholder=“Red”>
+                <p>
+                    <label for=“dates”>Choose a time frame:</label>
+                    <select name=“dates” id=“dates”>
+                        <option value=“today”>Today</option>
+                        <option value=“seven”>Past 7 days</option>
+                        <option value=“thirty”>Past 30 days</option>
+                        <option value=“ninety”>Past 90 days</option>
+                        <option value=“year”>Past year</option>
+                    </select>
+                </p>
+                <input type=“submit” name=“submit” class=“submit” placeholder=“Search”>
+            </form>
+            <button class=“” id=“”>
+                Find the News
+            </button>
+        </div>
+    </aside>
+    <h2>Results</h2>
+    <columns>
+        <div class="leftNews">
+            <p>Left</p>
+        </div>
+        <div class="independent">
+            <p>Independent</p>
+        </div>
+        <div class="rightNews">
+            <p>Right</p>
+        </div>
+    </columns>
+</body>
+
+</html>
