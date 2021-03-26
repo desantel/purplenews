@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Purple News Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="">
+    <header class="">
+      <h1>Search</h1>
+    </header>
+    <main class="">
+      <section class="">
+        <header class="">
+          <h2 class="">
+            What interests you?
+          </h2>
+        </header>
+        <div class="">
+          <p class="">
+            Please enter what you'd like to search and what side you'd like to see.
+          </p>
+          <form action ="/form/submit" method = "GET">
+          <input type="text" name="text" class="search" placeholder="Search here...">
+          <input type="radio" name="radio" class="radio" placeholder="Red">
+          <p>
+         <label for="dates">Choose a time frame:</label>
+         <select name="dates" id="dates">
+           <option value="today">Today</option>
+           <option value="seven">Past 7 days</option>
+           <option value="thirty">Past 30 days</option>
+           <option value="ninety">Past 90 days</option>
+           <option value="year">Past year</option>
+         </select>
+         </p>
+          <input type="submit" name="submit" class="submit" placeholder="Search">
+          
+          </form>
+          <button class="" id="">
+            Find the News
+          </button>
+        </div>
+        <div class="" id=""></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
