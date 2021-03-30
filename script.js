@@ -3,7 +3,7 @@ var searchButton = document.getElementById("search-button");
 
 function getApi() {
 
-    var requestUrl = "http://api.mediastack.com/v1/news?access_key=1f9d996f61966e44c53513fb9d96f5a7&categories=general&languages=en&";
+    var requestUrl = "http://api.mediastack.com/v1/news?access_key=1f9d996f61966e44c53513fb9d96f5a7&categories=general&languages=en&sources=huffpost,fox,bbc";
 
 
     fetch(requestUrl)
@@ -23,5 +23,6 @@ function getApi() {
         };
 
         })
-
+    }
 searchButton.addEventListener("click", getApi);
+
