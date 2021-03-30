@@ -1,9 +1,9 @@
 # Purple News
-
-The logo (Insert logo)
+! [Getting Started] (purplenews/2 copy.png)
+! [Getting Started] (purplenews/4 copy.png)
 
 ## Motivation
-There are many sides to a story including the news. There are so many sites that present on the same topic but will present it from a specific point of view. If the reader wants a different side to the story, they will have to search a different website. Let's be honest, how many people search liberal, conservative, and neutral sites to get the full picture of a story? Purple News was created as a one stop shop so someone can research a topic and find different perspectives. The goal is to prevent to minimize ______ bias.
+There are many sides to a story including the news. There are so many sites that present on the same topic but will present it from a specific point of view. If the reader wants a different side to the story, they will have to search a different website. Let's be honest, how many people search liberal, conservative, and neutral sites to get the full picture of a story? Purple News was created as a one stop shop so someone can research a topic and find different perspectives. The goal is to prevent to minimize _ bias.
 
 ## Screenshots and Demos
 
