@@ -25,17 +25,3 @@ function getApi() {
         })
 
 searchButton.addEventListener("click", getApi);
-
-/*"data"
-    
-
-
-function displayResults() {
-    "pagination": {
-        "limit": 100,
-
-    }
-
-
-}
-*/
