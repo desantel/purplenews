@@ -1,6 +1,6 @@
 # Purple News
-! [Getting Started] (purplenews/icon.png)
-! [Getting Started] (purplenews/logo.png)
+![Logo](logo.png)
+![Icon](icon.png) 
 
 ## Motivation
 There are many sides to a story including the news. There are so many sites that present on the same topic but will present it from a specific point of view. If the reader wants a different side to the story, they will have to search a different website. Let's be honest, how many people search liberal, conservative, and neutral sites to get the full picture of a story? Purple News was created as a one stop shop so someone can research a topic and find different perspectives. The goal is to reduce cognitive bias.
