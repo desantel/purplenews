@@ -22,7 +22,25 @@
             Please enter what you'd like to search and what side you'd like to see.
           </p>
           <form action ="/form/submit" method = "GET">
-          <input type="text" name="text" class="search" placeholder="Search here...">
+            <p>
+              <label for="topic">Choose a topic:</label>
+              <select name="topic" id="topic">
+                <option value="virus">Pandemic</option>
+                <option value="police">Police Brutality</option>
+                <option value="gun">Gun control</option>
+                <option value="abortion">Abortion</option>
+              </select>
+              </p>
+
+              <p>
+                <label for="side">Choose a Side:</label>
+                <select name="side" id="side">
+                  <option value="red">Conservative</option>
+                  <option value="blue">Liberal</option>
+                  <option value="purple">Neutral</option>
+                </select>
+                </p>
+          <!-- <input type="text" name="text" class="search" placeholder="Search here..."> -->
           <!--<input type="radio" name="radio" class="radio" placeholder="Red"> -->
           <p>
          <label for="dates">Choose a time frame:</label>
@@ -35,14 +53,13 @@
          </select>
          </p>
           </form>
-          <button class="" id="search-button">
-            Find  the  News
-            <!-- Testing -->
-          </button>
+          <a href="results.html"> <button class="" id="search-button">
+            Find the News
+          </button></a>
         </div>
         <div class="" id=""></div>
       </section>
     </main>
-    <script src="practice.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
