@@ -1,10 +1,12 @@
-
+// WHen the page loads run giphy
+giphy()
 function giphy() {
     let APIKEY = "UxcQX2JHJErGhjeoYu718TgqyX3duWJs";
-    document.addEventListener("DOMContentLoaded", init);
-    function init() {
+    document.addEventListener("DOMContentLoaded", function init() {
         document.getElementById("btnSearch").addEventListener("click", ev => {
             ev.preventDefault(); //to stop the page reload
+            //run the gnews search too
+            gNews()
             let url = `https://api.giphy.com/v1/gifs/search?api_key=UxcQX2JHJErGhjeoYu718TgqyX3duWJs&limit=5&q=`;
             let str = document.getElementById("search").value.trim();
             url = url.concat(str);
@@ -36,13 +38,13 @@ function giphy() {
                     console.error(err);
                 });
         });
-    }
+    })
 }
-giphy()
+
 
 function gNews() {
     let APIKEY = "&token=ccab3a39b0af9f7515a150bcfab8adb3&lang=en&max=2&country=us";
-    document.addEventListener("DOMContentLoaded", init);
+    // document.addEventListener("DOMContentLoaded", init);
     function init() {
         document.getElementById("btnSearch").addEventListener("click", ev => {
             ev.preventDefault(); //to stop the page reload
@@ -216,6 +218,7 @@ function guard() {
                         // out.insertAdjacentElement("afterbegin", fig);
                         // document.querySelector("#search").value = "";
                     }
+                    storeSearch(str);
 
 
 
@@ -227,4 +230,12 @@ function guard() {
     }
 }
 guard()
+
+function storeSearch (search) {
+  
+    localStorage.setItem("search", search);
+    let lastSearch = localStorage.getItem("search")
+    console.log(lastSearch);
+
+}
 
