@@ -4,7 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <title>Results Page</title>
-    <link rel="stylsheet" href="styleNews.css">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Content-Security-Policy" content="default-src: http: https: 'self'" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <style>
+            html {
+                font-size: 20px;
+                line-height: 1.6;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            }
+
+            form * {
+                font-family: inherit;
+                font-size: inherit;
+            }
+
+            img {
+                width: 25%;
+            }
+        </style>
+    </head>
 </head>
 
 <body>
@@ -15,6 +38,14 @@
         <nav>
             <p class="nav">Home</p>
         </nav>
+        <main>
+            <form>
+                <label for="search">Search</label>
+                <input id="search" type="search" />
+                <button id="btnSearch">Go</button>
+            </form>
+            <div class="out"></div>
+        </main>
     </header>
     <h2>Results</h2>
     <columns>
