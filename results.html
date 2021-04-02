@@ -16,40 +16,24 @@
             <p class="nav">Home</p>
         </nav>
     </header>
-    <aside>
-        <div class=“”>
-            <form action=“/form/submit” method=“GET”>
-                <input type=“text” name=“text” class=“search” placeholder=“Search here...“>
-                <input type=“radio” name=“radio” class=“radio” placeholder=“Red”>
-                <p>
-                    <label for=“dates”>Choose a time frame:</label>
-                    <select name=“dates” id=“dates”>
-                        <option value=“today”>Today</option>
-                        <option value=“seven”>Past 7 days</option>
-                        <option value=“thirty”>Past 30 days</option>
-                        <option value=“ninety”>Past 90 days</option>
-                        <option value=“year”>Past year</option>
-                    </select>
-                </p>
-                <input type=“submit” name=“submit” class=“submit” placeholder=“Search”>
-            </form>
-            <button class=“” id=“”>
-                Find the News
-            </button>
-        </div>
-    </aside>
     <h2>Results</h2>
     <columns>
-        <div class="leftNews">
+        <div id="leftNews">
             <p>Left</p>
         </div>
-        <div class="independent">
+        <div id="independent">
             <p>Independent</p>
         </div>
-        <div class="rightNews">
+        <div id="rightNews">
             <p>Right</p>
         </div>
     </columns>
+    <div id="results">
+
+    </div>
+    <script src="results.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
