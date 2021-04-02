@@ -19,30 +19,29 @@
         </header>
         <div class="">
           <p class="">
-            Please enter what you'd like to search and what side you'd like to see.
+            Please select what you'd like to search.
           </p>
           <form action ="/form/submit" method = "GET">
-          <input type="text" name="text" class="search" placeholder="Search here...">
-          <!--<input type="radio" name="radio" class="radio" placeholder="Red"> -->
-          <p>
-         <label for="dates">Choose a time frame:</label>
-         <select name="dates" id="dates">
-           <option value="today">Today</option>
-           <option value="seven">Past 7 days</option>
-           <option value="thirty">Past 30 days</option>
-           <option value="ninety">Past 90 days</option>
-           <option value="year">Past year</option>
-         </select>
-         </p>
+            <p>
+              <label for="topic">Choose a topic:</label>
+              <select name="topic" id="topic">
+
+                <option value="transgender">Transgender</option>
+                <option value="police">Police Brutality</option>
+                <option value="gun">Gun control</option>
+                <option value="abortion">Abortion</option>
+              </select>
+              </p>
+
+
           </form>
-          <button class="" id="search-button">
-            Find  the  News
-            <!-- Testing -->
-          </button>
+          <a href="results.html"> <button class="" id="search-button">
+            Find the News
+          </button></a>
         </div>
         <div class="" id=""></div>
       </section>
     </main>
-    <script src="practice.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
