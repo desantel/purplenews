@@ -21,7 +21,7 @@ btnSearch.addEventListener("click", ev => {
 
 // Functions
 function giphy() {
-    let url = `https://api.giphy.com/v1/gifs/search?api_key=UxcQX2JHJErGhjeoYu718TgqyX3duWJs&limit=5&q=`;
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=UxcQX2JHJErGhjeoYu718TgqyX3duWJs&limit=4&q=`;
     let str = search.value.trim();
     url = url.concat(str);
     fetch(url)
@@ -34,8 +34,8 @@ function giphy() {
                 img.src = content.data[i].images.downsized.url;
                 img.alt = content.data[i].title;
                 fc.textContent = content.data[i].title;
-                fig.appendChild(img);
-                fig.appendChild(fc);
+                document.getElementById("gif").appendChild(img);
+                document.getElementById("gif").appendChild(fc);
                 let out = document.querySelector(".out");
                 out.append(fig);
                 search.value = "";
@@ -58,7 +58,7 @@ function gnew() {
                     console.log(totalarticles);
                     const list = totalarticles.articles
                     for (let i = 0; i <= list.length; i++) {
-                        var createTitle = document.createElement('h3');
+                        var createTitle = document.createElement('h5');
                         var createDetails = document.createElement('p');
                         createTitle.textContent = list[i].title;
                         document.getElementById("rightNews").appendChild(createTitle);
@@ -89,7 +89,7 @@ function gardian() {
                     console.log(response.response.results);
                     const list = response.response.results
                     for (let i = 0; i <= list.length; i++) {
-                        var createTitle = document.createElement('h3');
+                        var createTitle = document.createElement('h5');
                         var createDetails = document.createElement('p');
                         createTitle.textContent = list[i].webTitle;
                         document.getElementById("leftNews").appendChild(createTitle);
@@ -114,3 +114,4 @@ function storeSearch(search) {
     console.log(lastSearch);
 
 }
+
