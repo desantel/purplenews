@@ -1,141 +1,142 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Purple News</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  </head>
-  <body>
-<style>
-  /*icon styles*/
-  .fi-social-facebook {
-    color: dodgerblue;
-    font-size: 2rem;
-  }
-  .fi-social-youtube {
-    color: red;
-    font-size: 2rem;
-  }
-  .fi-social-pinterest {
-    color: darkred;
-    font-size: 2rem;
-  }
-  i.fi-social-instagram {
-    color: brown;
-    font-size: 2rem;
-  }
-  i.fi-social-tumblr {
-    color: navy;
-    font-size: 2rem;
-  }
-  .fi-social-twitter {
-    color: skyblue;
-    font-size: 2rem;
-  }
 
-</style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purple News</title>
+  <link rel="icon" href="./2.png">
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
 
-<header>
-  <!-- Sub Navigation -->
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-      </ul>
+<body>
+  <header>
+    <!-- Sub Navigation -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+        </ul>
+      </div>
     </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-      </ul>
     </div>
-  </div>
-  </div>
-  <!-- /Sub Navigation -->
+    <!-- /Sub Navigation -->
 
-  <!-- logo and ad break -->
-  <div class="row">
-    <div class="medium-4 columns">
-      <img src="https://rhandschuh.github.io/purplenews/logo.png" alt="company logo" style="width: 200px;">
+    <!-- logo and ad break -->
+    <div class="row">
+      <div class="medium-12 columns text-center">
+        <img src="https://rhandschuh.github.io/purplenews/logo.png" alt="company logo" style="width: 250px;">
+      </div>
+      <div class="medium-8 columns">
+      </div>
     </div>
-    <div class="medium-8 columns">
+    <!-- / logo and ad break -->
+
+    <br>
+
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
     </div>
-  </div>
-  <!-- / logo and ad break -->
+
+    <div class="top-bar text-center" id="main-menu">
+      <li><a href="newresults.html" type="button" class="button">Click Me!!</a></li>
+    </div>
+
+  </header>
 
   <br>
 
-  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title">Menu</div>
-  </div>
-
-  <div class="top-bar" id="main-menu">
-    <li><a href="results.html" type="button" class="button">See Top Headlines</a></li>
-  </div>
-
-</header>
-
-<br>
-
-<div class="row"></div>
+  <div class="row"></div>
   <div class="medium-4 columns">
   </div>
-</div>
+  </div>
 
 
-<div class="row column">
-  <h4 style="margin: 0;" class="text-center">LATEST SEARCHES</h4>
-</div>
+  <div class="row column">
+    <h4 style="margin: 0;" class="text-center">Welcome to Purple News</h4>
+  </div>
 
-<hr>
+  <hr>
 
-<div class="row">
-  <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
+  <div class="row">
+    <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
 
-  <article>
+      <article>
 
-    <div class="row">
-      <div class="large-6 columns">
-        <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
-      </div>
-      <div class="large-6 columns">
-        <p></p>
-      </div>
+        <div class="row">
+          <div class="large-6 columns text-center">
+            <p>When red and blue meet, it makes purple</p>
+         
+          </div>
+          <div class="large-6 columns">
+
+          </div>
+        </div>
+
+        <hr>
+
+      </article>
+
     </div>
-
-    <hr>
-
-    </article>
-
-  </div>
-
-  <div class="large-4 columns">
-
-    <aside>
-
-      <br>
-
-    </aside>
-
-  </div>
-</div>
-
-<footer>
-  <div class="row expanded callout secondary">
 
     <div class="large-4 columns">
-      <h5>Made By</h5>
-      <p>Rachel, Beth, Rob, and Stephanie</p>
-    </div>
 
+      <aside>
+        <div id="newsGif">
+          <script>
+            function newsGif() {
+              let url = `https://api.giphy.com/v1/gifs/search?api_key=UxcQX2JHJErGhjeoYu718TgqyX3duWJs&limit=3&q=news`;
+
+              fetch(url)
+                .then(response => response.json())
+                .then(content => {
+                  for (let i = 0; i <= content.data.length; i++) {
+                    let fig = document.createElement("figure");
+                    let img = document.createElement("img");
+                    let fc = document.createElement("figcaption");
+                    img.src = content.data[i].images.downsized.url;
+                    img.alt = content.data[i].title;
+                    fc.textContent = content.data[i].title;
+                    document.getElementById("newsGif").appendChild(img);
+                    document.getElementById("newGif").appendChild(fc);
+                    let out = document.querySelector(".out");
+                    out.append(fig);
+                  }
+                })
+                .catch(err => {
+                  console.error(err);
+                });
+            }
+            newsGif()
+          </script>
+        </div>
+      </aside>
+
+    </div>
   </div>
 
-</footer>
+  <footer>
+    <div class="row expanded callout secondary">
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+      <div class="large-4 columns">
+        <h5>Made By</h5>
+        <p>Rachel, Beth, Rob, and Stephanie</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+
 </html>
