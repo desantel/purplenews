@@ -1,14 +1,14 @@
 # Purple News
-![Logo](logo.png) ![Icon](icon.png) 
+![Logo](/Assets/logo.png) ![Icon](/Assets/icon.png) 
 
 ## Motivation
 There are many sides to a story including the news. There are so many sites that present on the same topic but will present it from a specific point of view. If the reader wants a different side to the story, they will have to search a different website. Let's be honest, how many people search liberal, conservative, and neutral sites to get the full picture of a story? Purple News was created as a one stop shop so someone can research a topic and find different perspectives. The goal is to reduce cognitive bias.
 
 ## Screenshots
-![Screenshots](result1.png) ![Screenshots](result2.png)![Screenshots](result3.png) ![Screenshots](result4.png)![Screenshots](result5.png)![Screenshots](result6.png)
+![Screenshots](/Assets/result1.png) ![Screenshots](/Assets/result2.png)![Screenshots](/Assets/result3.png) ![Screenshots](/Assets/result4.png)![Screenshots](/Assets/result5.png)![Screenshots](/Assets/result6.png)
 
 ## Demo
-![FirstGif](demo1.gif) ![SecondGif](demo2.gif) 
+![FirstGif](/Assets/demo1.gif) ![SecondGif](/Assets/demo2.gif) 
 
 ## CSS Elements
 The first CSS framework considered was SimpleCSS but it was extremely basic which would probably not offer a great deal of customization. It was recommended that the Foundation CSS framework be used. 
