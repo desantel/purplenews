@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <title>Results Page</title>
-    <link rel="icon" href="./2.png">
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="icon" href="./Assets/2.png">
     <meta charset="UTF-8" />
     <meta name="Content-Security-Policy" content="default-src: http: https: 'self'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="./compFiles/styleNews.css">
 </head>
 
 <body>
     <header>
         <div class="row">
             <div class="medium-12 columns text-center">
-              <img src="https://rhandschuh.github.io/purplenews/logo.png" alt="company logo" style="width: 300px;">
+              <img src="https://rhandschuh.github.io/purplenews/logo.png" alt="company logo" style="width: 150px;">
             </div>
             <div class="medium-8 columns">
             </div>
@@ -25,7 +26,7 @@
         <main>
             <form>
                 <label for="search" style="font-size: 20px; line-height: 1.6;">Type Keyword Here:</label>
-                <input id="search" type="search" />
+                <input id="search" type="search" style="width: 300px;" />
                 <button id="btnSearch" style="font-size: 20px; line-height: 1.6;">Search</button>
             </form>
             <div class="out"></div>
@@ -39,13 +40,13 @@
         </div>
     </row>
     <columns class="row">
-        <div class="large-4 columns" style="border-right: 2px solid black; color:blue; border-top: 2px solid black;" id="leftNews">
+        <div class="large-4 columns" style="border-right: 2px solid black; border-top: 2px solid black;" id="leftNews">
             <h4>Left Leaning News Aticles</h4>
         </div>
-        <div class="large-4 columns" style="border-right: 2px solid black; color: purple; border-top: 2px solid black;" id="independent">
+        <div class="large-4 columns" style="border-right: 2px solid black; border-top: 2px solid black;" id="independent">
             <h4>Center Leaning News Articles</h4>
         </div>
-        <div class="large-4 columns" style="color: red; border-top: 2px solid black;" id="rightNews">
+        <div class="large-4 columns" style="border-top: 2px solid black;" id="rightNews">
             <h4>Right Leaning News Articles</h4>
         </div>
     </columns>
@@ -57,7 +58,7 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script> $(document).foundation();</script>
-    <script src="newResults.js"></script>
+    <script src="./compFiles/newResults.js"></script>
 </body>
 
 </html>

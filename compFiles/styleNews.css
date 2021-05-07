@@ -1,15 +1,27 @@
-.nav {
-
+body {
+    background-color: whitesmoke;
 }
 
-.leftNews {
+/* #btnSearch {
+    background-color: grey;
+    border-style: inset;
+} */
 
+#leftNews {
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(7, 148, 243, 0.514), rgb(6, 18, 131));
+    text-decoration: underline;
+    
 }
 
-.independent {
-
+#independent {
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(196, 155, 243, 0.5), rgb(129, 18, 219));
+    text-decoration: underline;
 }
 
-.rightNews {
-
+#rightNews {
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(235, 92, 99, 0.5), rgb(128, 3, 24));
+    text-decoration: underline;
 }
