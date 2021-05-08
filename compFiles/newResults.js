@@ -18,7 +18,6 @@ btnSearch.addEventListener("click", ev => {
     storeSearch(search.value)
 })
 
-
 // Functions
 // function giphy() {
 //     let url = `https://api.giphy.com/v1/gifs/search?api_key=UxcQX2JHJErGhjeoYu718TgqyX3duWJs&limit=4&q=`;
